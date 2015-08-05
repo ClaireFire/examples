@@ -311,7 +311,7 @@ public class CustomView extends View {
 					rect.right -= delta;
 				}
 				if (bh < rect.bottom - rect.top) {
-					int delta = (rect.bottom - rect.top - bh) / 2;
+		 			int delta = (rect.bottom - rect.top - bh) / 2;
 					rect.top += delta;
 					rect.bottom -= delta;
 				}

@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name=".GridViewActivity"></activity>
     </application>
     <!--
 我们要定义的控件上方会显示一张图片，我们可以设置这张图片的内容，长宽比，透明度，伸缩模式，以及图片四周的填充空间大小。

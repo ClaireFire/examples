@@ -2,7 +2,7 @@
 <com.carrey.customview.customview.CustomView 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:carrey="http://schemas.android.com/apk/res/com.carrey.customview"
-    android:id="@+id/customview"
+    android:id="@+id/customviewx"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"

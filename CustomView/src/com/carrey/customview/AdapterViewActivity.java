@@ -15,7 +15,6 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 
 public class AdapterViewActivity extends Activity {
-	
 	private GridView gridView;
 	private GridViewAdapter adapter;
 	private LayoutInflater inflater;
@@ -61,7 +60,7 @@ public class AdapterViewActivity extends Activity {
 			if (convertView == null) {
 				holder = new ViewHolder();
 				convertView = inflater.inflate(R.layout.item, null);
-				holder.customView = (CustomView) convertView.findViewById(R.id.customview);
+				holder.customView = (CustomView) convertView.findViewById(R.id.customviewx);
 				convertView.setTag(holder);
 			} else {
 				holder = (ViewHolder) convertView.getTag();

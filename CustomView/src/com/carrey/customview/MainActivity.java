@@ -16,12 +16,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Button button = (Button) findViewById(R.id.button);
-		LayoutInflater layoutInflater = LayoutInflater.from(this);
-		LayoutInflater layoutInflater2 = (LayoutInflater)this.getSystemService(LAYOUT_INFLATER_SERVICE);
 		button.setOnClickListener(new View.OnClickListener() {
-			
-		
-		
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, AdapterViewActivity.class);

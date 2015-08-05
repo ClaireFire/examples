@@ -54,7 +54,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imagePaddingRight=0x7f010005;
+        public static final int imagePaddingRight=0x7f010004;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -64,73 +64,22 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imagePaddingTop=0x7f010004;
+        public static final int imagePaddingTop=0x7f010005;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>fillXY</code></td><td>0</td><td></td></tr>
-<tr><td><code>center</code></td><td>1</td><td></td></tr>
+<tr><td><code>fillXY</code></td><td>1</td><td></td></tr>
+<tr><td><code>center</code></td><td>0</td><td></td></tr>
 </table>
          */
         public static final int imageScaleType=0x7f010007;
-        /**   <attr name="imageSrc" format="reference"/>
-    <attr name="imageAspectRatio" format="float"/>
-    <attr name="imageAlpha" format="float"/>
-    <attr name="imagePaddingLeft" format="dimension"/>
-    <attr name="imagePaddingTop" format="dimension"/>
-    <attr name="imagePaddingRight" format="dimension"/>
-    <attr name="imagePaddingBottom" format="dimension"/>
-    <attr name="imageScaleType">
-        <enum name="fillXY" value="0"/>
-        <enum name="center" value="1"/>
-    </attr> 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int imageSrc=0x7f010000;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int subTitlePaddingBottom=0x7f010015;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int subTitlePaddingLeft=0x7f010012;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int subTitlePaddingRight=0x7f010014;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int subTitlePaddingTop=0x7f010013;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -157,47 +106,47 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static final int subTitleTextPaddingBottom=0x7f010015;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subTitleTextPaddingLeft=0x7f010012;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subTitleTextPaddingRight=0x7f010013;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subTitleTextPaddingTop=0x7f010014;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static final int subTitleTextSize=0x7f010010;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int titlePaddingBottom=0x7f01000e;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int titlePaddingLeft=0x7f01000b;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int titlePaddingRight=0x7f01000d;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int titlePaddingTop=0x7f01000c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -224,19 +173,84 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static final int titleTextPaddingBottom=0x7f01000e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleTextPaddingLeft=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleTextPaddingRight=0x7f01000c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleTextPaddingTop=0x7f01000d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static final int titleTextSize=0x7f010009;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int apple_itunes=0x7f020000;
+        public static final int bitlord=0x7f020001;
+        public static final int chat=0x7f020002;
+        public static final int clef=0x7f020003;
+        public static final int clock=0x7f020004;
+        public static final int contacts=0x7f020005;
+        public static final int corel=0x7f020006;
+        public static final int documents1=0x7f020007;
+        public static final int extra=0x7f020008;
+        public static final int fallout=0x7f020009;
+        public static final int goo=0x7f02000a;
+        public static final int i_explorer=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int network_places=0x7f02000d;
+        public static final int paint=0x7f02000e;
+        public static final int rtm=0x7f02000f;
+        public static final int stellarium=0x7f020010;
+        public static final int ventrilo=0x7f020011;
+        public static final int where=0x7f020012;
+        public static final int win_media=0x7f020013;
+        public static final int winrar=0x7f020014;
     }
     public static final class id {
         public static final int center=0x7f060000;
+        public static final int customview=0x7f060006;
+        public static final int customviewcell=0x7f060003;
         public static final int fillXY=0x7f060001;
-        public static final int my_btn=0x7f060003;
-        public static final int mylayout=0x7f060002;
+        public static final int gridview=0x7f060002;
+        public static final int my_btn=0x7f060005;
+        public static final int mylayout=0x7f060004;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int activity_gridview=0x7f030000;
+        public static final int item=0x7f030001;
+        public static final int main=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -283,30 +297,20 @@ containing a value of this type.
            <tr><td><code>{@link #CustomView_imagePaddingRight com.yw.diycomponent:imagePaddingRight}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_imagePaddingTop com.yw.diycomponent:imagePaddingTop}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_imageScaleType com.yw.diycomponent:imageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_imageSrc com.yw.diycomponent:imageSrc}</code></td><td>  <attr name="imageSrc" format="reference"/>
-    <attr name="imageAspectRatio" format="float"/>
-    <attr name="imageAlpha" format="float"/>
-    <attr name="imagePaddingLeft" format="dimension"/>
-    <attr name="imagePaddingTop" format="dimension"/>
-    <attr name="imagePaddingRight" format="dimension"/>
-    <attr name="imagePaddingBottom" format="dimension"/>
-    <attr name="imageScaleType">
-        <enum name="fillXY" value="0"/>
-        <enum name="center" value="1"/>
-    </attr> </td></tr>
-           <tr><td><code>{@link #CustomView_subTitlePaddingBottom com.yw.diycomponent:subTitlePaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_subTitlePaddingLeft com.yw.diycomponent:subTitlePaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_subTitlePaddingRight com.yw.diycomponent:subTitlePaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_subTitlePaddingTop com.yw.diycomponent:subTitlePaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_imageSrc com.yw.diycomponent:imageSrc}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_subTitleText com.yw.diycomponent:subTitleText}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_subTitleTextColor com.yw.diycomponent:subTitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_subTitleTextPaddingBottom com.yw.diycomponent:subTitleTextPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_subTitleTextPaddingLeft com.yw.diycomponent:subTitleTextPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_subTitleTextPaddingRight com.yw.diycomponent:subTitleTextPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_subTitleTextPaddingTop com.yw.diycomponent:subTitleTextPaddingTop}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_subTitleTextSize com.yw.diycomponent:subTitleTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_titlePaddingBottom com.yw.diycomponent:titlePaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_titlePaddingLeft com.yw.diycomponent:titlePaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_titlePaddingRight com.yw.diycomponent:titlePaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomView_titlePaddingTop com.yw.diycomponent:titlePaddingTop}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_titleText com.yw.diycomponent:titleText}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_titleTextColor com.yw.diycomponent:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_titleTextPaddingBottom com.yw.diycomponent:titleTextPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_titleTextPaddingLeft com.yw.diycomponent:titleTextPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_titleTextPaddingRight com.yw.diycomponent:titleTextPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomView_titleTextPaddingTop com.yw.diycomponent:titleTextPaddingTop}</code></td><td></td></tr>
            <tr><td><code>{@link #CustomView_titleTextSize com.yw.diycomponent:titleTextSize}</code></td><td></td></tr>
            </table>
            @see #CustomView_imageAlpha
@@ -317,19 +321,19 @@ containing a value of this type.
            @see #CustomView_imagePaddingTop
            @see #CustomView_imageScaleType
            @see #CustomView_imageSrc
-           @see #CustomView_subTitlePaddingBottom
-           @see #CustomView_subTitlePaddingLeft
-           @see #CustomView_subTitlePaddingRight
-           @see #CustomView_subTitlePaddingTop
            @see #CustomView_subTitleText
            @see #CustomView_subTitleTextColor
+           @see #CustomView_subTitleTextPaddingBottom
+           @see #CustomView_subTitleTextPaddingLeft
+           @see #CustomView_subTitleTextPaddingRight
+           @see #CustomView_subTitleTextPaddingTop
            @see #CustomView_subTitleTextSize
-           @see #CustomView_titlePaddingBottom
-           @see #CustomView_titlePaddingLeft
-           @see #CustomView_titlePaddingRight
-           @see #CustomView_titlePaddingTop
            @see #CustomView_titleText
            @see #CustomView_titleTextColor
+           @see #CustomView_titleTextPaddingBottom
+           @see #CustomView_titleTextPaddingLeft
+           @see #CustomView_titleTextPaddingRight
+           @see #CustomView_titleTextPaddingTop
            @see #CustomView_titleTextSize
          */
         public static final int[] CustomView = {
@@ -415,7 +419,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.yw.diycomponent:imagePaddingRight
         */
-        public static final int CustomView_imagePaddingRight = 5;
+        public static final int CustomView_imagePaddingRight = 4;
         /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#imagePaddingTop}
           attribute's value can be found in the {@link #CustomView} array.
@@ -431,7 +435,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.yw.diycomponent:imagePaddingTop
         */
-        public static final int CustomView_imagePaddingTop = 4;
+        public static final int CustomView_imagePaddingTop = 5;
         /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#imageScaleType}
           attribute's value can be found in the {@link #CustomView} array.
@@ -443,98 +447,22 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>fillXY</code></td><td>0</td><td></td></tr>
-<tr><td><code>center</code></td><td>1</td><td></td></tr>
+<tr><td><code>fillXY</code></td><td>1</td><td></td></tr>
+<tr><td><code>center</code></td><td>0</td><td></td></tr>
 </table>
           @attr name com.yw.diycomponent:imageScaleType
         */
         public static final int CustomView_imageScaleType = 7;
         /**
-          <p>
-          @attr description
-            <attr name="imageSrc" format="reference"/>
-    <attr name="imageAspectRatio" format="float"/>
-    <attr name="imageAlpha" format="float"/>
-    <attr name="imagePaddingLeft" format="dimension"/>
-    <attr name="imagePaddingTop" format="dimension"/>
-    <attr name="imagePaddingRight" format="dimension"/>
-    <attr name="imagePaddingBottom" format="dimension"/>
-    <attr name="imageScaleType">
-        <enum name="fillXY" value="0"/>
-        <enum name="center" value="1"/>
-    </attr> 
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#imageSrc}
+          attribute's value can be found in the {@link #CustomView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
           @attr name com.yw.diycomponent:imageSrc
         */
         public static final int CustomView_imageSrc = 0;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitlePaddingBottom}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:subTitlePaddingBottom
-        */
-        public static final int CustomView_subTitlePaddingBottom = 21;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitlePaddingLeft}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:subTitlePaddingLeft
-        */
-        public static final int CustomView_subTitlePaddingLeft = 18;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitlePaddingRight}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:subTitlePaddingRight
-        */
-        public static final int CustomView_subTitlePaddingRight = 20;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitlePaddingTop}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:subTitlePaddingTop
-        */
-        public static final int CustomView_subTitlePaddingTop = 19;
         /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleText}
           attribute's value can be found in the {@link #CustomView} array.
@@ -565,6 +493,70 @@ containing a value of this type.
         */
         public static final int CustomView_subTitleTextColor = 17;
         /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleTextPaddingBottom}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:subTitleTextPaddingBottom
+        */
+        public static final int CustomView_subTitleTextPaddingBottom = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleTextPaddingLeft}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:subTitleTextPaddingLeft
+        */
+        public static final int CustomView_subTitleTextPaddingLeft = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleTextPaddingRight}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:subTitleTextPaddingRight
+        */
+        public static final int CustomView_subTitleTextPaddingRight = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleTextPaddingTop}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:subTitleTextPaddingTop
+        */
+        public static final int CustomView_subTitleTextPaddingTop = 20;
+        /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#subTitleTextSize}
           attribute's value can be found in the {@link #CustomView} array.
 
@@ -580,70 +572,6 @@ containing a value of this type.
           @attr name com.yw.diycomponent:subTitleTextSize
         */
         public static final int CustomView_subTitleTextSize = 16;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titlePaddingBottom}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:titlePaddingBottom
-        */
-        public static final int CustomView_titlePaddingBottom = 14;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titlePaddingLeft}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:titlePaddingLeft
-        */
-        public static final int CustomView_titlePaddingLeft = 11;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titlePaddingRight}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:titlePaddingRight
-        */
-        public static final int CustomView_titlePaddingRight = 13;
-        /**
-          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titlePaddingTop}
-          attribute's value can be found in the {@link #CustomView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.yw.diycomponent:titlePaddingTop
-        */
-        public static final int CustomView_titlePaddingTop = 12;
         /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleText}
           attribute's value can be found in the {@link #CustomView} array.
@@ -673,6 +601,70 @@ containing a value of this type.
           @attr name com.yw.diycomponent:titleTextColor
         */
         public static final int CustomView_titleTextColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleTextPaddingBottom}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:titleTextPaddingBottom
+        */
+        public static final int CustomView_titleTextPaddingBottom = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleTextPaddingLeft}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:titleTextPaddingLeft
+        */
+        public static final int CustomView_titleTextPaddingLeft = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleTextPaddingRight}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:titleTextPaddingRight
+        */
+        public static final int CustomView_titleTextPaddingRight = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleTextPaddingTop}
+          attribute's value can be found in the {@link #CustomView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.yw.diycomponent:titleTextPaddingTop
+        */
+        public static final int CustomView_titleTextPaddingTop = 13;
         /**
           <p>This symbol is the offset where the {@link com.yw.diycomponent.R.attr#titleTextSize}
           attribute's value can be found in the {@link #CustomView} array.
