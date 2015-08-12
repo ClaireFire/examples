@@ -1,5 +1,5 @@
 <resources>
 
     <string name="app_name">DIYComponent</string>
-
+	<string name="chooser_title">打开方式</string>
 </resources>

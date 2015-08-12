@@ -15,11 +15,12 @@ public final class R {
     }
     public static final class id {
         public static final int clean=0x7f060003;
-        public static final int editText1=0x7f060004;
-        public static final int editText2=0x7f060005;
+        public static final int editText1=0x7f060005;
+        public static final int editText2=0x7f060006;
         public static final int et=0x7f060000;
+        public static final int intentAction=0x7f060004;
         public static final int remenber=0x7f060002;
-        public static final int toMain=0x7f060006;
+        public static final int toMain=0x7f060007;
         public static final int toSecond=0x7f060001;
     }
     public static final class layout {
@@ -28,6 +29,7 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int chooser_title=0x7f040001;
     }
     public static final class style {
         /** 

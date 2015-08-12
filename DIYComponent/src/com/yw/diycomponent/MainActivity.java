@@ -1,4 +1,6 @@
 package com.yw.diycomponent;
+import org.apache.http.protocol.HTTP;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,27 +22,31 @@ public class MainActivity extends Activity implements View.OnClickListener{
 	private Button toSecond;
 	private Button remenber;
 	private Button clean;
+	private Button intentAction;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		Log.i(TAG, "MainActivity -->"+Util.printCurrentMethod());
 		setContentView(R.layout.main);
 		et = (EditText)this.findViewById(R.id.et);
 		toSecond = (Button)this.findViewById(R.id.toSecond);
 		remenber = (Button)this.findViewById(R.id.remenber);
 		clean = (Button)this.findViewById(R.id.clean);
+		intentAction = (Button)this.findViewById(R.id.intentAction);
 		SharedPreferences sp = getSharedPreferences(MY_FILE, 0);
 		et.setText(sp.getString("name", ""));
 		remenber.setOnClickListener(this);
 		clean.setOnClickListener(this);
 		toSecond.setOnClickListener(this);
+		intentAction.setOnClickListener(this);
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	    // If the request went well (OK) and the request was PICK_CONTACT_REQUEST
-	    if (resultCode == Activity.RESULT_OK && requestCode == MAIN_REQUEST_CODE) {
-	       Toast.makeText(this, "ccccc", 3000).show();
+	    if (resultCode == 123) {
+	       Toast.makeText(this, data.getStringExtra("SECOND"), 3000).show();
 	    }
 	}
 	@Override
@@ -103,6 +109,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		switch (tag) {
 		case R.id.toSecond:
 			Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+			intent.putExtra("MAIN", "I am from mainactivity!");
 			startActivityForResult(intent, MAIN_REQUEST_CODE);
 			break;
 		case R.id.remenber:
@@ -117,6 +124,20 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			editor2.putString("name", "");
 			editor2.commit();
 			break;
+		case R.id.intentAction:
+			Intent sendIntent = new Intent();
+			
+			sendIntent.setAction(Intent.ACTION_SEND);
+			sendIntent.putExtra(Intent.EXTRA_TEXT, "x速度快了房价开始的飞机上两地分居围殴个个个个个个个个个个个个个个个个irupqiewrklsjdfklsdjf");
+			sendIntent.setType(HTTP.PLAIN_TEXT_TYPE); // "text/plain" MIME type
+			String title = getResources().getString(R.string.chooser_title);
+			// Create intent to show the chooser dialog
+			Intent chooser = Intent.createChooser(sendIntent, title);
+			
+			// Verify that the intent will resolve to an activity
+			if (sendIntent.resolveActivity(getPackageManager()) != null) {
+			    startActivity(sendIntent);
+			}
 		default:
 			break;
 		}
