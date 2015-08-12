@@ -1,8 +1,7 @@
-package com.example.task;
+package com.yw.task2;
 
 import java.util.List;
 
-import com.example.task.R;
 
 import android.app.Activity;
 import android.app.ActivityManager;

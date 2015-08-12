@@ -22,7 +22,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 	private Button toSecond;
 	private Button remenber;
 	private Button clean;
-	private Button intentAction;
+	private Button intentActionToProcess;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,13 +33,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		toSecond = (Button)this.findViewById(R.id.toSecond);
 		remenber = (Button)this.findViewById(R.id.remenber);
 		clean = (Button)this.findViewById(R.id.clean);
-		intentAction = (Button)this.findViewById(R.id.intentAction);
+		intentActionToProcess = (Button)this.findViewById(R.id.intentActionToProcess);
 		SharedPreferences sp = getSharedPreferences(MY_FILE, 0);
 		et.setText(sp.getString("name", ""));
 		remenber.setOnClickListener(this);
 		clean.setOnClickListener(this);
 		toSecond.setOnClickListener(this);
-		intentAction.setOnClickListener(this);
+		intentActionToProcess.setOnClickListener(this);
 	}
 
 	@Override
@@ -124,20 +124,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			editor2.putString("name", "");
 			editor2.commit();
 			break;
-		case R.id.intentAction:
-			Intent sendIntent = new Intent();
-			
-			sendIntent.setAction(Intent.ACTION_SEND);
-			sendIntent.putExtra(Intent.EXTRA_TEXT, "x速度快了房价开始的飞机上两地分居围殴个个个个个个个个个个个个个个个个irupqiewrklsjdfklsdjf");
-			sendIntent.setType(HTTP.PLAIN_TEXT_TYPE); // "text/plain" MIME type
-			String title = getResources().getString(R.string.chooser_title);
-			// Create intent to show the chooser dialog
-			Intent chooser = Intent.createChooser(sendIntent, title);
-			
-			// Verify that the intent will resolve to an activity
-			if (sendIntent.resolveActivity(getPackageManager()) != null) {
-			    startActivity(sendIntent);
-			}
+		case R.id.intentActionToProcess:
+			Intent intent2 = new Intent();
+			intent2.setAction("young.task.ACTION");
+			startActivity(intent2);
 		default:
 			break;
 		}

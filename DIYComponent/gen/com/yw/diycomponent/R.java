@@ -18,7 +18,7 @@ public final class R {
         public static final int editText1=0x7f060005;
         public static final int editText2=0x7f060006;
         public static final int et=0x7f060000;
-        public static final int intentAction=0x7f060004;
+        public static final int intentActionToProcess=0x7f060004;
         public static final int remenber=0x7f060002;
         public static final int toMain=0x7f060007;
         public static final int toSecond=0x7f060001;

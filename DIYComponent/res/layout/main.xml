@@ -33,10 +33,10 @@
         android:text="清除" />
 
     <Button
-        android:id="@+id/intentAction"
+        android:id="@+id/intentActionToProcess"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="intentAction" />
+        android:text="intentActionToProcess" />
 
     <EditText
         android:id="@+id/editText1"

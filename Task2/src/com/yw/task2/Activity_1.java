@@ -1,6 +1,4 @@
-package com.example.task;
-
-import com.example.task.R;
+package com.yw.task2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +7,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class Activity_3 extends BaseActivity implements OnClickListener{
+public class Activity_1 extends BaseActivity implements OnClickListener{
 	 Button lookTaskInfo;
 	 Button itself;
-	 public static final String TAG = "young Activity_3";
+	 public static final String TAG = "young Activity_1";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,6 +21,7 @@ public class Activity_3 extends BaseActivity implements OnClickListener{
 		itself = (Button)this.findViewById(R.id.itself);
 		itself.setOnClickListener(this);
 		itself.setText(TAG+"itself");
+		
 		showRunningTasks(TAG);
 	}
 	
@@ -32,11 +31,12 @@ public class Activity_3 extends BaseActivity implements OnClickListener{
 		int tag = v.getId();
 		switch (tag) {
 		case  R.id.lookTaskInfo:
-			Intent intent = new Intent(this, Activity_4.class);
+			Intent intent = new Intent(this, Activity_2.class);
 			startActivity(intent);
+			
 			break;
 		case  R.id.itself:
-			Intent intent2 = new Intent(this, Activity_3.class);
+			Intent intent2 = new Intent(this, Activity_1.class);
 			startActivity(intent2);
 			break;
 		default:
@@ -48,15 +48,6 @@ public class Activity_3 extends BaseActivity implements OnClickListener{
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Log.i(TAG, "Activity_3 onDestroy");
-		
-	}
-	
-	@Override
-	protected void onNewIntent(Intent intent) {
-		// TODO Auto-generated method stub
-		super.onNewIntent(intent);
-		Log.i(TAG, "Activity_3 onNewIntent");
-		showRunningTasks(TAG);
+		Log.i(TAG, "Activity_1 onDestroy");
 	}
 }

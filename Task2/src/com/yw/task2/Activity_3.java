@@ -1,6 +1,4 @@
-package com.example.task;
-
-import com.example.task.R;
+package com.yw.task2;
 
 import android.content.Intent;
 import android.os.Bundle;
