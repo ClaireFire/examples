@@ -61,7 +61,7 @@ public class NetworkDemo extends Activity {
 			public void run() {
 				try {
 					// 获取网站数据内容
-					String _Content = Request("www.caoegg.cn");
+					String _Content = Request("www.baidu.com");
 					// 定义一个正则表达式，并进行数据的提取、过滤
 					String _Str = "(<div class=\"c\">){1}[\\S ]+(</div>){1}";
 					// 编译正则表达式
