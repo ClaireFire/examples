@@ -4,6 +4,7 @@ import org.apache.http.protocol.HTTP;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,6 +43,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		intentActionToProcess.setOnClickListener(this);
 	}
 
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		// TODO Auto-generated method stub
+		super.onConfigurationChanged(newConfig);
+		Log.i(TAG, "MainActivity -->"+Util.printCurrentMethod());
+	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	    // If the request went well (OK) and the request was PICK_CONTACT_REQUEST
