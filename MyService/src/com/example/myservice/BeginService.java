@@ -2,11 +2,24 @@ package com.example.myservice;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
 public class BeginService extends Service {
 
+	public IBinder mBinder;
+	
+	class MyBinder extends Binder {
+		
+		public BeginService getService() {
+			return BeginService.this;
+		}
+		
+		public String helloService(String name) {
+			return "hello Service I'm "+ name;
+		}
+	}
 	private static final String TAG = "young";
 	public void helloYoung(){
 		for(int i=0;i<100;i++)
@@ -25,7 +38,7 @@ public class BeginService extends Service {
 	public IBinder onBind(Intent intent) {
 		// TODO Auto-generated method stub
 		Log.i(TAG, "BeginService onBind()") ;
-		return null;
+		return new MyBinder();
 	}
 
 	@Override

@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <service android:name=".BeginService"></service>
+        <service android:name=".YoungIntentService"></service>
     </application>
 
 </manifest>
