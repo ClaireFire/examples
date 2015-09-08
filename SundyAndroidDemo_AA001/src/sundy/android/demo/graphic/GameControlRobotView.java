@@ -1,6 +1,6 @@
 package sundy.android.demo.graphic;
 
-//import java.net.InterfaceAddress;
+import java.net.InterfaceAddress;
 
 import sundy.android.demo.configration.CommonConstants;
 import android.content.Context;

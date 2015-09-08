@@ -46,7 +46,7 @@ public class ThreadActivity extends Activity {
 				Log.i(CommonConstants.LOGCAT_TAG_NAME,i + "---" + getName());
 				try
 				{
-					sleep((int) Math.random() * 100);
+					sleep((int) Math.random() * 10);
 				} catch (InterruptedException e)
 				{
 					e.printStackTrace();
@@ -119,7 +119,7 @@ public class ThreadActivity extends Activity {
 				m_Tickets--;
 				
 				try {
-	                Thread.sleep((int) Math.random() * 1000);
+	                Thread.sleep((int) Math.random() * 10);
 	            } catch (InterruptedException e) {
 	                e.printStackTrace();
 	            }

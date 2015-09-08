@@ -5,6 +5,7 @@ package sundy.android.demo.service;
 
 import sundy.android.demo.configration.CommonConstants;
 import android.R;
+import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -16,7 +17,7 @@ import android.util.Log;
  * @author Administrator
  *
  */
-public class BeginService extends Service {
+@SuppressLint("NewApi") public class BeginService extends Service {
 
 	/* (non-Javadoc)
 	 * @see android.app.Service#onBind(android.content.Intent)
