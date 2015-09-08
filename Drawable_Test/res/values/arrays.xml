@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listview_items">
+        <item>ColorDrawable</item>
+        
+        <item>GradientDrawable(JAVA)</item>
+        <item>GradientDrawable(XML)</item>
+        
+        <item>BitmapDrawable(JAVA)</item>
+        <item>BitmapDrawable(XML)</item>
+        
+        <item>NinePatchDrawable</item>
+        
+        <item>InsetDrawable</item>
+        
+        <item>ClipDrawable</item>
+        
+        <item>ScaleDrawable</item>
+        
+        <item>RotateDrawable</item>
+        
+        <item>AnimationListDrawable</item>
+        
+        <item>LayerDrawable</item>
+        
+        <item>TransitionDrawable</item>
+        
+        <item>LevelListDrawable</item>
+        
+        <item>StateListDrawable</item>
+        
+    </string-array> 
+</resources>

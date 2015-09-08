@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:scaleGravity=""可以设置缩放的对齐方式 -->
+<scale xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:drawable="@drawable/smiley_smile"
+    android:scaleWidth="100%"
+    android:scaleHeight="100%"
+    >
+    
+</scale>
